@@ -28,12 +28,12 @@ data = pd.DataFrame({'whoAmI':lst})
 
 print('Исходные данные:')
 print(data)
-data_test_of_get_dumnies = pd.get_dummies(data['whoAmI'])
+data_test_of_get_dummies = pd.get_dummies(data['whoAmI'])
 
 print('Данные в виде one hot:')
 get_one_hot(data)
 print(data)
 
 # Проверка результата
-print(data.equals(data_test_of_get_dumnies))
+print(data.equals(data_test_of_get_dummies))
 
